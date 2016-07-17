@@ -1,3 +1,4 @@
+Uzupełnić zdjęcia o alt i title, podłączyć zdjęcia, naprawić cennik i kontakt oraz z tymi kołami
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +10,11 @@
 <body>
 	<header>
 		<div class="container clearfix">
-			<div class="chair"><p class="one">Sit</p><p class="two">on</p><p class="one">chair</p></div>
+			<div class="chair"><span class="one">Sit</span><span class="two">on</span><span class="one">chair</span></div>
 			<nav>
 				<ul>
 					<li class="x"><a href="#about">O Firmie</a>
+						<div class="triangle"></div>
 						<div class="y">
 							<ul>
 								<li>Aktualności</li>
@@ -34,10 +36,10 @@
 	<section id="about">
 		<div class="container clearfix">
 			<div class="bracket">&lt</div>
-			<div class="aboutLeft"><img src="./images/black_chair.png"></div>
+			<div class="aboutLeft"><img src="./images/black_chair.png" alt="" title=""></div>
 			<div class="aboutRight">
-				<h1>Sit<p class="blue">on</p>our<p class="blue">chair</p></h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis. Nulla placerat nunc nulla, ac ultrices sem luctus non. Aenean vestibulum felis eu nisi sollicitudin commodo. Phasellus condimentum massa eu posuere egestas. Maecenas faucibus ac metus eu dignissim. Sed luctus suscipit tristique. </p>
+				<h1>Sit<span class="blue">on</span>our<span class="blue">chair</span></h1>
+				<p class="aboutRight_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis. Nulla placerat nunc nulla, ac ultrices sem luctus non.</p>
 				<p class="button">zobacz więcej</p>
 			</div>
 			<div class="bracket1">&gt</div>
@@ -45,74 +47,103 @@
 	</section>
 	<section id="photos">
 		<div class="container clearfix">
-			<div class="photosLeft"><img src="./images/box1_img.jpg"></div>
-			<div class="photosCenter"><img src="./images/box2_img.jpg"></div>
-			<div class="photosRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis. Nulla placerat nunc nulla, ac ultrices sem luctus non. Aenean vestibulum felis eu nisi sollicitudin commodo.</div>
-
+			<div class="photosLeft">
+				<img src="./images/box1_img.jpg">
+				<p class="Clair">Chair CLAIR</p>
+				<p class="square"></p>
+			</div>
+			<div class="photosCenter">
+				<img src="./images/box2_img.jpg">
+				<p class="Margarita">Chair MARGARITA</p>
+				<p class="square"></p>
+			</div>
+			<div class="photosRight">
+				<p class="allInput">Finds all Inputs</p>
+				<p class="findAlltext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis.   Nunc elementum, tortor ut tristique hendrerit, massa ex eleifend ex, sed pharetra purus felis blandit lectus. Aenean convallis diam eget urna ultricies pharetra.</p>
+				<p class="findAlltext2">Aenean vestibulum felis eu nisi sollicitudin commodo. Roin vitae nisi sapien.</p>
+			</div>
 		</div>
 	</section>
 	<section class="price">
 		<div class="container clearfix">
+			<h2>Cennik</h2> 			<!--do poprawy!!!!!!!!!-->
 			<div class="priceCost">
-				<h2>cennik</h2>
+				<div class="circleOut"></div>
+				<div class="circleIn"></div>
 				<h3>Basic plan</h3>
-				<p class="number">85<sup>99</sup></p>
+				<p class="number">85<sup>99</sup><br></p>
+				<p class="monthly">pln/msc</p>
+				<div class="circlePrice"></div>
 				<ul>
 					<li>Zakup towaru + dowóz</li>
 					<li>Serwis</li>
 				</ul>
+				<p class="join">Dołącz</p>
 			</div>
 			<div class="priceCost">
+				<div class="circleOut"></div>
+				<div class="circleIn"></div>
 				<h3>Standard plan</h3>
 				<p class="number">95<sup>99</sup></p>
+				<p class="monthly">pln/msc</p>
+				<div class="circlePrice"></div>
 				<ul>
 					<li>Zakup towaru + dowóz</li>
 					<li>Serwis</li>
 					<li>Gwarancja 5 lat</li>
 				</ul>
+				<p class="join">Dołącz</p>
 			</div>
 			<div class="priceCost">
+				<div class="circleOut"></div>
+				<div class="circleIn"></div>
 				<h3>Advance plan</h3>
 				<p class="number">211<sup>00</sup></p>    <!-- to trzeba sprawdzić z zadaniem domowym o pozycjonowaniu(jeże) -->
+				<p class="monthly">pln/msc</p>
+				<div class="circlePrice"></div>
 				<ul>
 					<li>Zakup towaru + dowóz</li>
 					<li>Serwis</li>
 					<li>Gwarancja 6 lat</li>
 					<li>Porady projektanta</li>
 				</ul>
+				<p class="join">Dołącz</p>
 			</div>
 		</div>
-
 	</section>
+	
 
 	<section id="contact">
 		<div class="container clearfix">
-			<h3>Kontakt<h3>
-			<form>
-				<input type="text" name="imię"><br>
-				<input type="text" name="email"><br>
-				<textarea rows="4" cols="50"></textarea><br>
-			</form>
-			<div class="fotel"><img src="./images/red_chair.png"></div>
+			<h2>Kontakt</h2>			<!--Do poprawy-->
+			<div class="contactLeft">
+				<form>
+					<input type="text" name="imię" placeholder=" Imię"><br>
+					<input type="text" name="email" placeholder=" email"><br>
+					<textarea rows="4" cols="50" placeholder=" Wiadomość"></textarea><br>
+				</form>
+			</div>
+			<div class="contactRight">
+				<div class="fotel"><img src="./images/red_chair.png"></div>
+				<div class="image"><img src="./images/form_ok.jpg"></div>
+				<div class="check">Zgadzam się na przetwarzanie danych osobowych</div>
+				<div class="confirm">Wyślij</div>
+			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container clearfix">
-			<div class="downLeft">Copyright 2014| All Rights Reserved. -Sit On Chair</div>
-			<div class="images"> </div> <!-- to backgroundy całe -->
-			<div class="downRight">Sit on chair</div>
+			<div class="downLeft">Copyright 2014| All Rights Reserved. - Sit On Chair</div>
+			<div class="images"><footer background="./images/twitter.png"</background></div>
+					<!-- <img src="./images/twitter.png"></div> -->		<!-- to backgroundy całe -->
+			<h4>Sit<span class="downRight">on</span>chair</h4>
 		</div>
 	</footer>
-
-
-<ul>
-	<li class="x">
-		<div class="y"
-		.x:Hover y
-
-
-
-
+</body>
+</html>  
+ 
+ 
+<!-- 
 		kreska pod pismem to border
 		w form wsyzstko
 		generator checkboxa!
