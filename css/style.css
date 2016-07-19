@@ -102,30 +102,30 @@
 	font-style: normal;
 }
 
-*{
+*{						/*reset*/
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', Arial, sans-serif;
 
 	}
-.container{
+.container{						/*wszystko odnosi się do strony*/
 	width: 1080px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
-.clearfix::before, .clearfix::after{
+
+.clearfix::before, .clearfix::after{				/*!!!!NAJWAŻNIEJSZ PRZY FLOAT!!!!!!*/
 	content: "";
 	display: table;
 	clear: both;
 }
-header{
+header{							/*nagłówek*/
 	width: 100%;
 	background-color: black;
 	color:white;
 }
 
-.chair{
+.chair{							
 	text-transform: uppercase;
 	float: left;
 	margin: 10px;
@@ -163,10 +163,10 @@ header nav ul li a{
 	font-weight: bold;
 
 }
-.x{
+.x{									/*menu*/
 	position: relative;
-}
-.triangle{
+}							
+.triangle{							/*trójkąt*/
 	width:0;
 	height:0;
 	border-right:20px solid transparent;
@@ -178,7 +178,7 @@ header nav ul li a{
 	display: none;
 }
 
-.y{
+.y{								/*menu wysuwane*/
 	position: absolute;
 	top: 37px;
 	left: -25px;
@@ -189,7 +189,7 @@ header nav ul li a{
 	display: none;
 }
 
-.x:hover .y{
+.x:hover .y{				/*tu się wyświetla*/
 	display: block;
 	color: white;
 	font-weight: 500;
@@ -200,11 +200,8 @@ header nav ul li a{
 	display: block;
 }
 
-/*wygląda na to że pierwsza część jest ok*/
-
-#about{
+#about{					/*druga sekcja*/
 	margin: 0 auto;
-	border: 1px solid blue;
 	padding: 0;
 	vertical-align: middle;
 	background: rgba(250,250,250,1);
@@ -216,13 +213,12 @@ header nav ul li a{
 	background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(216,208,239,1) 50%, rgba(210,206,224,1) 51%, rgba(219,218,237,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dbdaed', GradientType=0 );
 	width: 100%;
-	/*height: 500px;*/
+	
 }
 
-.aboutLeft{
+.aboutLeft{					/*krzesło czarne*/
 	float: left;
 	width: 470px;
-	/*height: 420px;*/
 	margin-top: 80px;
 }
 
@@ -242,12 +238,12 @@ header nav ul li a{
 	top: 0;
 	left: -75px;
 }
-.bracket{
+.bracket{				/*nawias*/
 	float: left;
 	font-size: 72px;
 	color: rgb(40,197,178);
 	width: 60px;
-	margin: 220px 0 0 25px;
+	margin: 220px 0 0 15px;
 	font-weight: 300;
 }
 .bracket1{
@@ -258,18 +254,18 @@ header nav ul li a{
 	margin: 220px 25px 0 0 ;
 	font-weight: 300;
 }
-h1{
+h1{								/*tytuł sit on chair*/
 	text-transform: uppercase;
 	font-size: 36px;
 	font-weight: normal;
 }
-.blue{
+.blue{							/*tytuł sit on chair*/
 	color: rgb(40,197,178);
 	font-weight: bold;
 	display: inline-block;
 	margin: 0 10px;
 }
-.aboutRight_text{
+.aboutRight_text{				
 	margin: 25px 0;
 }
 .button{
@@ -285,9 +281,8 @@ h1{
 	font-size: 20px;
 }
 
-#photos{
+#photos{				/*sekcja 3*/
 	width: 100%;
-	/*border: 2px solid green;*/
 	margin: 0 auto;
 
 }
@@ -297,7 +292,7 @@ h1{
 	position: relative;
 	height: 250px;
 }
-.Clair{
+.Clair{							/*zjęcie clair i ten prostokąt zwany square*/
 	position: absolute;
 	top: 150px;
 	left: 10px;
@@ -369,24 +364,22 @@ h1{
 	margin: 0 auto;
 	position: relative;
 	background-color: rgb(249, 249, 249);
-	border: solid 1px red;
+	
 }
 h2{
-	position: absolute;
-	top: 10px;
-	left: 250px;
+	margin: 10px 0 25px 50px;
 	border-bottom: 6px solid rgb(40,197,178);
-	padding-right: 220px;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 20px;
+	width: 300px;
 }
 .priceCost{
 	float: left;
 	margin-top: 100px;
 	width: 300px;
 	height: 480px;
-	margin-left: 30px;
+	margin: 35px -25px 25px 50px;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	position: relative;
 	color: rgba(0, 0, 0,0.4);
@@ -423,18 +416,15 @@ h3{
  	background-color: white;
 
 }
-.number{
-	position: absolute;
-	top: 80px;
-	left: 105px;
-	margin-top: 50px;
-	font-size: 36px;
+.number{				/*kwota*/
+	margin-top: 25px;
+	font-size: 40px;
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 	color: rgba(0,0,0,0.2);
-}
-.circlePrice{
+}	
+.circlePrice{				/*kółko magiczne po środku*/
 	position: absolute;
 	top: 50px;
 	left: 70px;
@@ -444,20 +434,14 @@ h3{
 	border: 2px solid rgba(0,0,0,0.1);
 	margin-top: 50px;
 	font-size: 30px;
-	background-color: rgb(255,255,255,0.1)
+	font-weight: bold;
+	
 }
 
-/*.priceCost:hover, .circlePrice{
-	border-color: rgb(40,197,178);
-	background-color: white;
-	
-}*/
-.monthly{
+.monthly{						/*miesięcznie*/
 	font-size: 20px;
 	font-weight: bold;
-	position: absolute;
-	top: 180px;
-	left: 100px;
+	margin:10px 0 0 25px;
 	text-transform: uppercase;
 	color: rgba(0,0,0,0.2);
 }
@@ -475,61 +459,6 @@ h3{
 .price ul li:nth-of-type(2n+2){
 	background-color: rgb(241,241,241);
 }
-.priceCost:hover {
-	background-color: rgb(40,197,178);
-	color: white;
-}
-.priceCost:hover h3{
-	background-color: rgb(40,197,178);
-	color: white;
-}
-/*Tu wstawić .priceCost:hover .circlePrice*/ 
-/*Tu wstawić .priceCost:hover .circlePrice*/ 
-/*Tu wstawić .priceCost:hover .circlePrice*/ 
-/*Tu wstawić .priceCost:hover .circlePrice*/ 
-
-.priceCost:hover .number{
-	color: rgba(40,197,178,1);
-}
-.priceCost:hover .monthly{
-	color: rgba(40,197,178,1);
-}
-.priceCost:hover .join {
-	background-color: white;
-	color: rgb(40,197,178);
-}
-.priceCost:hover ul li{
-	background-color: rgb(228, 228, 228);
-	color: rgba(0,0,0,0.4);
-}
-.priceCost:hover ul li:nth-of-type(2n+1){
-	background-color: white;
-}
-.priceCost:hover .circleOut{
-	background-color: rgb(40,197,178);
-	border-color: rgb(40,197,178);
-}
-.priceCost:hover .circleIn{
-	background-color: rgb(255,255,255);
-	border-color: rgb(255,255,255);	
-}
-/*.circlePrice:hover{
-	border: 1px solidrgb(40,197,178);
-	color: rgb(40,197,178)*/
-
-/*h3:hover{
-	color: white;
-}
-.circleIn:hover .circleOut{
-	background-color: white;
-	border:6px solid rgb(40,197,178);
-}
-.circleOut:hover{
-	background-color: rgb(40,197,178);
-}
-.priceCost ul:hover{
-	background-color: rgb(40,197,178);
-}*/
 .join{
 	position: absolute;
 	top:430px;
@@ -543,44 +472,130 @@ h3{
 	color: white;
 	border-radius:5px;
 }
-.join:hover{
+.priceCost:hover {								/*cała sekcja dotycząca hover okna ceny */
+	background-color: rgb(40,197,178);
+	color: white;
+}
+.priceCost:hover h3{							/*cała sekcja dotycząca hover okna ceny */
+	background-color: rgb(40,197,178);
+	color: white;
+}
+.priceCost:hover .circlePrice{					/*cała sekcja dotycząca hover okna ceny */
+	border-color: rgb(40,197,178);
+	background-color:rgba(255,255,255, 0.9);
+}
+.priceCost:hover .number{						/*cała sekcja dotycząca hover okna ceny */
+	color: rgba(40,197,178,1);
+	
+}
+.priceCost:hover .monthly{
+	color: rgb(40,197,178);
+	
+}
+
+.priceCost:hover .join {
 	background-color: white;
 	color: rgb(40,197,178);
 }
-#contact{
+.priceCost:hover ul li{
+	background-color: rgb(228, 228, 228);
+	color: rgba(0,0,0,0.4);
+}
+.priceCost:hover ul li:nth-of-type(2n+1){
+	background-color: white;
+}
+
+.priceCost:hover .circleOut{
+	background-color: rgb(40,197,178);
+	border-color: rgb(40,197,178);
+}
+
+.priceCost:hover .circleIn{
+	background-color: rgb(255,255,255);
+	border-color: rgb(255,255,255);	
+}
+
+
+#contact{				/*całe dotyczy formularzy checkboxów */
 	margin: 0 auto;
 	width: auto;
 	position: relative;
 }
 
-.contactLeft{
+.contactLeft{			/*całe dotyczy formularzy i inputów*/
 	float:left;
-	margin: 60px 15px 20px 0;
+	margin: 20px 15px 20px 0;
 }
-input{
+input{						/*text area i input czyli formularze*/
 	height: 50px;
 	width: 600px;
-	margin-bottom: 15px;
+	margin: 0px 0 35px 50px;
 	border: 1px solid rgb(40,197,178);
-	margin-left: 25px;
-	padding: 5px; 
+	padding: 10px; 
 	
 }
-textarea{
+textarea{							/*text area i input czyli formularze*/
 	width: 600px;
 	height: 150px;
 	border: 1px solid rgb(40,197,178);
-	margin-left: 25px; 
+	margin-left: 50px; 
+	padding: 10px;
 }
 .contactRight{
 	position: relative;
 }
-.fotel{
+.armchair{					/*fotel czerwony */
 	float:right;
-	width: 200px;
+	width: 250px;
 	height: 200px;
-	margin: 20px 150px 0 0;
+	margin: 20px 120px 0 0;
 }
+
+.armchair img{					/*fotel czerwony */
+	width: 250px;
+
+}
+.image{					/*checkbox i wiele nie zrozumiałych elementów*/
+	width: 50px;	
+	padding: 0px;
+	background-color: white;
+	border: 1px solid green;
+}
+input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding: 0px; border:0;
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:45px;
+							height:40px; 
+							display:inline-block;
+							line-height:40px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:40px;
+							vertical-align:middle;
+							cursor:pointer;
+						
+							
+							
+							
+
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 0 -40px;
+						}
+						label.css-label {
+				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_09c886970ec59f997c06db36ef901e91.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+		}
+
+
 .check{
 	float: right;
 	margin-right: 40px;
@@ -600,10 +615,10 @@ textarea{
 }
 .confirm{
 	float: right;
-	width: 300px;
+	width: 250px;
 	height: 40px;
 	background-color: blue;
-	margin: 80px 80px 0 0;
+	margin: 80px 135px 0 0;
 	border-radius: 5px;
 	background-color: rgb(40,197,178);
 	color: white;
@@ -612,31 +627,64 @@ textarea{
 	padding: 10px;
 }
 footer{
-	margin-top: 15px;
+	margin-top: 55px;
 	position: relative;
 }
 .downLeft{
  	float: left;
  	color: rgba(0,0,0,0.4);
- 	margin-left: 25px;
+ 	margin: 15px 0 0 25px;
+ 	
 }
-.images{
+.tw{														/*portale społecznościowe*/
+	background: url("../images/twitter.png") no-repeat;
+	float: right;
+	width: 100px;
+	height: 50px;
+	padding: 20px;
+	margin-right: 20px;
+	
+}
+.pint{
+	background: url("../images/pinterest.png") no-repeat;
+	float:right;
+	width:40px;
+	height: 50px;
+	padding: 10px;
+	margin-right: 5px;
+	
+}
+.vm{
+	background: url("../images/vimeo.png") no-repeat;
+	float:right;
+	width:40px;
+	height: 50px;
+	padding: 10px;
+	margin-right: 5px;
+}
 
-	/*position: absolute;
-	top:0;
-	left:0;
-	left:200px;*/
+.flickr{
+	background: url("../images/flickr.png") no-repeat;
+	float:right;
+	width:40px;
+	height: 50px;
+	padding: 10px;
+	margin-right: 5px;
+	
 }
+
 h4{
+	clear: both;
 	float: right;
 	text-transform: uppercase;
 	font-weight: normal;
 	color: rgba(0,0,0,0.4);
+	margin: 15px 0 0 0;
 }
 .downRight{
 	font-weight: bold;
 	margin: 0 15px;
 }
 
-/*z kwadratem translate rotate kwadracik 20 na 20 lub inny rozmiar i position absolut*/
+
 
