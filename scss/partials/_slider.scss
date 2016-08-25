@@ -1,0 +1,92 @@
+//Sekcja slider 
+
+#about {
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: middle;
+  background: rgba(250,250,250,1);
+  background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(216,208,239,1) 50%, rgba(210,206,224,1) 51%, rgba(219,218,237,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,250,250,1)), color-stop(50%, rgba(216,208,239,1)), color-stop(51%, rgba(210,206,224,1)), color-stop(100%, rgba(219,218,237,1)));
+  background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(216,208,239,1) 50%, rgba(210,206,224,1) 51%, rgba(219,218,237,1) 100%);
+  background: -o-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(216,208,239,1) 50%, rgba(210,206,224,1) 51%, rgba(219,218,237,1) 100%);
+  background: -ms-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(216,208,239,1) 50%, rgba(210,206,224,1) 51%, rgba(219,218,237,1) 100%);
+  background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(216,208,239,1) 50%, rgba(210,206,224,1) 51%, rgba(219,218,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dbdaed', GradientType=0 );
+  width: 100%;
+}
+.aboutLeft {
+  float: left;
+  width: 470px;
+  margin-top: 80px;
+  img {
+    width: 550px;
+    height: 400px;
+    margin-left: -100px;
+  }
+  ul {
+    list-style: none;
+  }
+  // li { //wykombinować jak to ma działać
+  //   display: none;
+  // }
+  .visible {
+    display: inline-block;
+  }
+}
+.aboutLeftim {
+  display: inline-block;
+}
+.aboutRight {
+  float: left;
+  width: 400px;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  top: 0;
+  left: -75px;
+}
+.bracketLeft {
+  float: left;
+  font-size: 72px;
+  color: rgb(40,197,178);
+  width: 60px;
+  margin: 220px 0 0 15px;
+  font-weight: 300;
+  cursor:pointer;
+}
+.bracketRight {
+  float: right;
+  font-size: 72px;
+  color: rgb(40,197,178);
+  width: 60px;
+  margin: 220px 25px 0 0;
+  font-weight: 300;
+  cursor:pointer;
+}
+h1 { 
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: normal;
+}
+.blue {
+  color: rgb(40,197,178);
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px;
+}
+.aboutRight_text {
+  margin: 25px 0;
+}
+.button {
+  width: 230px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: rgb(40,197,178);
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+}
+//POWYŻEJ DO PLIKU SLIDER.SCSS LUB CONTENT
