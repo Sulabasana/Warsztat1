@@ -1,2 +1,5 @@
 node_modules/*
 fonts/*
+scss/*
+part 2*/
+*.package.json
