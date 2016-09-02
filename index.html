@@ -38,25 +38,44 @@
 	<section id="about">
 		<div class="container clearfix">
 			<a href="#">
-				<div class="bracketLeft">&lt</div>
+				<div class="bracketLeft" onclick="plusDivs(-1)">&lt</div>
 			</a>
-			<div class="aboutLeft">
-
-				<ul>
-					<li class="aboutLeftim"><img src="./images/black_chair.png" alt="black_chair" title="black_chair"></li>
-					<li><img src="./images/red_chair2.png" alt="black_chair" title="black_chair"></li>
-					<li><img src="./images/black_chair.png" alt="black_chair" title="black_chair"></li>
-					<li><img src="./images/black_chair.png" alt="black_chair" title="black_chair"></li>
-				</ul>
+			<div class="next">
+					<a href="#">
+					<div class="bracketRight" onclick="plusDivs(1)">&gt</div>
+					</a>
 			</div>
-			<div class="aboutRight">
+			<div class="aboutLeft">
+				<div class="aboutLeftChair">
+                    <img height="400" src="./images/black_chair.png" />
+                </div>
+                <div class="aboutRight">
 				<h1>Sit<span class="blue">on</span>our<span class="blue">chair</span></h1>
 				<p class="aboutRight_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis. Nulla placerat nunc nulla, ac ultrices sem luctus non.</p>
 				<p class="button">zobacz więcej</p>
+				</div>
 			</div>
-			<a href="#">
-				<div class="bracketRight">&gt</div>
-			</a>
+			<div class="aboutLeft">
+				<div class="aboutLeftChair">
+                    <img height="400" src="./images/red.png" />
+             	</div>
+              	<div class="aboutRight">
+					<h1>Sit<span class="blue">on</span>our<span class="blue">chair</span></h1>
+					<p class="aboutRight_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis. Nulla placerat nunc nulla, ac ultrices sem luctus non.</p>
+					<p class="button">zobacz więcej</p>
+				</div>
+			</div>
+			<div class="aboutLeft">
+				<div class="aboutLeftChair">
+                    <img height="400" src="./images/orange.png" />
+                </div>
+            	<div class="aboutRight">
+					<h1>Sit<span class="blue">on</span>our<span class="blue">chair</span></h1>
+					<p class="aboutRight_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem nec magna maximus dapibus. Quisque porta vitae nulla ut venenatis. Nulla placerat nunc nulla, ac ultrices sem luctus non.</p>
+					<p class="button">zobacz więcej</p>
+				</div>
+				
+			</div>
 		</div>
 	</section>
 	<section id="photos">
@@ -145,30 +164,30 @@
                     <span class="list_label">Wybierz rodzaj</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Clair</li>
-                        <li>Margarita</li>
-                        <li>Selena</li>
+                        <li data-price = "300">Clair</li>
+                        <li data-price = "400">Margarita</li>
+                        <li data-price = "500">Selena</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz kolor</span>
                     <span class="list_arrow2"></span>
                     <ul class="list_panel2">
-                        <li>Czerwony</li>
-                        <li>Czarny</li>
-                        <li>Pomarańczowy</li>
+                        <li  data-price = "0">Czerwony</li>
+                        <li  data-price = "0">Czarny</li>
+                        <li  data-price = "0">Pomarańczowy</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz materiał</span>
                     <span class="list_arrow3"></span>
                     <ul class="list_panel3">
-                        <li>Tkanina</li>
-                        <li>Skóra</li>
+                        <li data-price = "100">Tkanina</li>
+                        <li data-price = "500">Skóra</li>
                     </ul>
                 </div>
                 <div class="checkbox check-box">
-                    <input type="checkbox" id="transport" data-transport-price="200">
+                    <input type="checkbox" id="transport" data-transportprice="200">
                     <label for="transport">Transport</label>
                 </div>
                 <!--<div class="checkbox"></div>-->
@@ -199,8 +218,9 @@
                     <span class="pattern value"></span>
                     <span class="transport value"></span>
                 </div>
-                <div class="sum_label">SUMA</div>
-                <div class="sum"><strong></strong></div>
+                <div class="sum_label">SUMA
+                	<div class="sum"><strong></strong></div>
+				</div>
             </div>
             <a href="" class="green_button">Zamawiam</a>
         </section>
